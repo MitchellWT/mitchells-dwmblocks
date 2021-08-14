@@ -5,4 +5,4 @@ temperature=$(sensors -u |
     grep 'temp1_input' | 
     grep -o '[0-9]*\.[0.9]')
 
-echo $temperature°C
+echo 🌡 $temperature°C
