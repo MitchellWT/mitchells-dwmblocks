@@ -1,0 +1,5 @@
+#! /bin/sh
+
+temperature=$(sensors -j | jq '."thinkpad-isa-0000"."CPU"."temp1_input"')
+
+printf "🌡 %.0f°C" $temperature

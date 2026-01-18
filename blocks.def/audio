@@ -1,0 +1,5 @@
+#! /bin/sh
+
+audio=$(amixer get Master | grep 'Mono' | grep -o '[0-9%]*%')
+
+echo 🔊 $audio
